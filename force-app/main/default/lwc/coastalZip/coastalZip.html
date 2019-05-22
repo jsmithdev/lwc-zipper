@@ -1,0 +1,28 @@
+<template>
+
+    <lightning-card>
+
+        <h3 slot="title">
+            <lightning-icon icon-name="doctype:zip" size="medium"></lightning-icon>
+            &nbsp;&nbsp;
+            {header}
+        </h3>
+
+        <p class="slds-p-horizontal_small">
+            Click the button to download a dynamically zipped / compressed plain text file to 
+            test the POC.
+        </p>
+
+        <div slot="footer">
+            <lightning-button 
+                label="Download Zip  🎉" 
+                title="Zippy 🦄" 
+                onclick={handleClick}
+                icon-name="utility:download" 
+                class="slds-m-left_x-small">
+            </lightning-button>
+        </div>
+
+    </lightning-card>
+    
+</template>
